@@ -47,3 +47,29 @@ body {
     margin: 16px 0;
     font-size: 20px;
 }
+.form-register .botons:hover {
+    background-color: rgb(0, 255, 170)
+}
+
+input#file-input{
+    display:none;
+}
+
+input#file-input + label{
+    width: 100%;
+    background: yellow; 
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    color: black;
+    margin: 16px 0;
+    font-size: 20px;
+    text-align: center;
+}
+input#file-input + label:hover{
+    background-color: rgb(0, 255, 170)
+}
+
+input#file-name {
+    
+}

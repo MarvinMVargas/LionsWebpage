@@ -8,13 +8,41 @@
     <title>¿Quieres Unirte?</title>
 </head>
 <body>
+   
+    <!--Formulario para mandar curriculum-->
+    
+    <form action="">
     <section class="form-register">
+        
         <h4>Envia tu curriculum :D</h4>
-        <input class="controls" type="text" name="Descripcion" id="Descripcion" placeholder="Describe porque quieres formar parte del equipo">
+        <input class="controls" type="text" name="Descripcion" id="Descripcion" placeholder="¿porque quieres formar parte del equipo?">
         <input class="controls" type="text" name="Dondenosotros" id="Dondenosotros" placeholder="¿Donte te enteraste de nosotros?">
-        <p>No gracias quisiera <a href="index.html">volver a inicio</a></p>
-        <input class="botons" type="submit" value="Adjuntar">
+        <p>No gracias quisiera <a href="index.html">volver a inicio</a></p> 
+        <!--<input class="botons" type="file" value="Adjuntar">-->
+        
+        <!--modificacion de boton de adjuntar-->
+        <br>
+        <div>
+            <input id="file-input" type="file">
+            <label for="file-input">Adjuntar</label>
+        </div>
+        <br>
+        <span>
+            <strong>Archivo cargado:</strong>
+            <span id="file-name">Ninguno</span>
+        </span>
+        <script>
+            let inputFile=document.getElementById('file-input');
+            let fileNameField = document.getElementById('file-name');
+            inputFile.addEventListener('change', function(event){
+                let uploadedFileName = event.target.files[0].name;
+                fileNameField.textContent = uploadedFileName;
+            })
+            </script>
         <input class="botons" type="submit" value="Enviar">
+    </form>
+    
+    <!--Fin del formulario-->
 
     </section>
 </body>
