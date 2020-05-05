@@ -1,7 +1,9 @@
 *{
     margin:0px;
     padding: 0px;
-    font-family: helvetica;
+    font-family: georgia, times, serif;
+    line-height: 1.6em;
+    font-size: 1.2rem;
 }
 
 div#banner{
@@ -48,4 +50,19 @@ img#img_banner{
 }
 #menu #item:hover #desple{
     display:block;
+}
+
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+h1{
+    line-height: 1.3em;
+    font-size: 2rem;
+}
+
+p{
+    margin-bottom: 1.6em;
 }
