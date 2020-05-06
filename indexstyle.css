@@ -6,18 +6,7 @@
     font-size: 1.2rem;
 }
 
-div#banner{
-    width: 100%;
-    height:400px;
-    background-color: white;
-}
 
-img#img_banner{
-    display: block;
-    margin: auto;
-    width: 100%;
-    max-width: 1200px;
-}
 
 #menu ul{
     list-style:none;
@@ -42,6 +31,7 @@ img#img_banner{
 
 #menu #desple{
     display: none;
+    position: absolute;
 }
 
 #menu #item a:hover{
@@ -65,4 +55,41 @@ h1{
 
 p{
     margin-bottom: 1.6em;
+}
+
+.header {
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
+}
+
+.header a{
+    color:white;
+    text-decoration: none;
+
+}
+.logo-nav-container{
+    display_ flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main{
+    padding-top: 10rem;
+}
+.footer {
+    padding: 4rem 0;
+    text-align: center;
 }
