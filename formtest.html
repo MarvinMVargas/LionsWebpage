@@ -3,11 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="stylesheet" href="indexstyle.css">
 
     <title>¿Quieres Unirte?</title>
 </head>
 <body>
+    <header class="header">
+        
+        <div class="container logo-nav-container" id="menu">
+            <a href="index.html" class="logo" >LIONS R.C.</a>
+            <nav class="navigation">
+        
+                    <ul>
+                        <li id="item"><a href="index.html">Acerca de Nosotros</a></li>
+                        <li id="item"><a href="#">Videos</a>
+                        
+                            <ul id="desple">
+                                <li><a href="#">Video 1</a></li>
+                                <li><a href="#">Video 2</a></li>
+                                <li><a href="#">Video 3</a></li>
+                                <li><a href="#">Video 4</a></li>
+                            </ul>
+                        </li>
+                        <li id="item"><a href="#">Robots</a></li>
+                        <li id="item"><a href="#">Contactanos</a></li>
+                        <li id="item"><a href="formtest.html">¿Quieres Unirte?</a></li>
+                    </ul>
+                
+                </nav>
+        </div>
+        
+    </header>
    
     <!--Formulario para mandar curriculum-->
     
@@ -17,18 +44,18 @@
         <h4>Envia tu curriculum :D</h4>
         <input class="controls" type="text" name="Descripcion" id="Descripcion" placeholder="¿porque quieres formar parte del equipo?">
         <input class="controls" type="text" name="Dondenosotros" id="Dondenosotros" placeholder="¿Donte te enteraste de nosotros?">
-        <p>No gracias quisiera <a href="index.html">volver a inicio</a></p> 
+        <p id="vinculo1">No gracias quisiera <a id="vinculo1" href="index.html">volver a inicio</a></p> 
         <!--<input class="botons" type="file" value="Adjuntar">-->
         
         <!--modificacion de boton de adjuntar-->
         <br>
-        <div>
+        <div id="adjuntbot">
             <input id="file-input" type="file">
             <label for="file-input">Adjuntar</label>
         </div>
         <br>
         <span>
-            <strong>Archivo cargado:</strong>
+            <strong id="descripcioncargado">Archivo cargado:</strong>
             <span id="file-name">Ninguno</span>
         </span>
         <script>

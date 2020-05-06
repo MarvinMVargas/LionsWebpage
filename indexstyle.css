@@ -1,7 +1,7 @@
 *{
     margin:0px;
     padding: 0px;
-    font-family: georgia, times, serif;
+    font-family: 'calibri'; /*georgia, times, serif;*/
     line-height: 1.6em;
     font-size: 1.2rem;
 }
@@ -63,7 +63,7 @@ p{
 }
 
 .header {
-    background-image: url('EXAMPLE\ BANNER.jpg');
+    background-image: url('Banner.jpg');
     color: white;
     padding: 2rem 0;
 
@@ -99,7 +99,7 @@ p{
     text-align: center;
 }
 
-.main{
+/*.main{
     width: 800px;
     background-color: dodgerblue;
     padding: 30px;
@@ -109,4 +109,56 @@ p{
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000000;
+}
+*/
+
+.contenedor-columnas {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+.columna1 {
+    width: 20%;
+    float: left;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: dodgerblue;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000000;
+}
+.columna1 img{
+    width: 100%;
+}
+
+.columna2 {
+    width: 55%;
+    float: left;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: dodgerblue;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000000;
+}
+    
+.columna3 {
+    width: 20%;
+    float: left;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: dodgerblue;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000000;
+}
+.columna3 img{
+    width: 100%;
 }
