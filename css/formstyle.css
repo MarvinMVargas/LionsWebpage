@@ -5,7 +5,11 @@
 
 }
 body {
-    background-image: url('fondo.jpg');
+    background: url('../img/fondo.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 /* padding modifica los margenes internos de lo escrito en el cuadro*/
 .form-register {
