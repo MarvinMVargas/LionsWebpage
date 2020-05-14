@@ -4,3 +4,25 @@
     text-decoration: none;
 
 }
+#videoList li{
+    display: block;
+}
+.video{
+    height:100%;
+    margin: auto;
+}
+
+#videoFrame{
+    width: 30%;
+    float: left;
+
+}
+
+#videoDescription{
+    width: 60%;
+    height: 100%;
+    float: left;
+    color: white;
+    display: flex;
+    flex-flow: column;
+}

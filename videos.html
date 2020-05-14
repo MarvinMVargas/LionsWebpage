@@ -11,43 +11,23 @@
 <body>
 
     <header>
-        <div id = "logoBar" >
-            <a href="index.html">
-                <img src="./img/mainLogo.png" alt="" id = 'logo'>
-            </a>
-            <div class="container logo-nav-container" id="menu">
-                <a href="index.html" class="logo" ></a>
-                <nav class="navigation">
-            
-                        <ul>
-                            <li id="item"><a href="index.html">Acerca de Nosotros</a></li>
-                            <li id="item"><a href="videos.html">Videos</a>
-                            
-                                <ul id="desple">
-                                    <li><a href="video1.html">Video 1</a></li>
-                                    <li><a href="#">Video 2</a></li>
-                                    <li><a href="#">Video 3</a></li>
-                                    <li><a href="#">Video 4</a></li>
-                                </ul>
-                            </li>
-                            <li id="item"><a href="robots.html">Robots</a>
-                                <ul id="desple">
-                                    <li><a href="soccer.html">Soccer</a></li>
-                                    <li><a href="#">Rescue Line</a></li>
-                                    <li><a href="#">Rescue Maze</a></li>
-                                    <li><a href="#">Tank</a></li>
-                                </ul>
-                            </li>
-                            <li id="item"><a href="contactanos.html">Contáctanos</a></li>
-                            <li id="item"><a href="formtest.html">¿Quieres Unirte?</a></li>
-                        </ul>
-                    
-                    </nav>
+        <nav id="menu">
+            <div id = "logoBar" >
+                <ul>
+                    <li class="item">
+                        <a href="videos.html">Videos</a></li>
+                    <li class="item">
+                        <a href="robots.html">Robots</a></li>
+                    <li id='logo-li'>
+                            <a href="index.html" id='img-anchor'>
+                                <img src="./img/mainLogo.png" alt="" id='logo'>
+                            </a>
+                    </li>
+                    <li class="item"><a href="contactanos.html">Contáctanos</a></li>
+                    <li class="item"><a href="formtest.html">¿Quieres Unirte?</a></li>
+                </ul>
             </div>
-        </div>
-
-        
-        
+        </nav>   
     </header>
     
     <main class="main">
@@ -80,42 +60,72 @@
 
                        <!-- Video1 -->
                        <li>
-                           <a href="video1.html">
-                                <h2>Video 1</h2>
-                           </a>
-                           <iframe width="280" height="158" src="https://www.youtube.com/embed/KKwjeJzKezw" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, praesentium.
-                       </li>
+                           <div class="video">
+                                <div id = 'videoFrame'>
+                                    <iframe width="280" height="158" src="https://www.youtube.com/embed/KKwjeJzKezw" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                                </div>
 
-                       <!-- Video2 -->
-                       <li>
-                        <a href="#">
-                             <h2>Video 2</h2>
-                        </a>
-                        <iframe width="280" height="158" src="https://www.youtube.com/embed/ferZnZ0_rSM" frameborder="0"
-                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, praesentium.
+                                <div id = 'videoDescription'>
+                                    <a href="video1.html">
+                                        <h2>Video 1</h2>
+                                    </a>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, praesentium.
+                                </div>
+                            </div>
+                        </li>
+
+
+                         <!-- Video2 -->
+                        <li>
+                            <div class="video">
+                                <div id="videoFrame">
+                                    <iframe width="280" height="158" src="https://www.youtube.com/embed/ferZnZ0_rSM" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+
+                                <div id="videoDescription">
+                                    <a href="#">
+                                        <h2>Video 2</h2>
+                                    </a>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, praesentium.
+                                </div>
+                            </div>
                         </li>
 
                         <!-- Video3 -->
                         <li>
-                            <a href="#">
-                                <h2>Video 3</h2>
-                            </a>
-                            <iframe width="280" height="158" src="https://www.youtube.com/embed/ypvd2LJCJHg" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, praesentium.
+                            <div class="video">
+                                <div id="videoFrame">
+                                    <iframe width="280" height="158" src="https://www.youtube.com/embed/ypvd2LJCJHg" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+
+                                <div id="videoDescription">
+                                    <a href="#">
+                                        <h2>Video 3</h2>
+                                    </a>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, praesentium.
+                                </div>
+                            </div>
                         </li>
 
+                        
                         <!-- Video4 -->
                         <li>
-                            <a href="#">
-                                <h2>Video 4</h2>
-                            </a>
-                            <iframe width="280" height="158" src="https://www.youtube.com/embed/3dofrKm_Usw" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, praesentium.
+                            <div class="video">
+                                <div id="videoFrame">
+                                    <iframe width="280" height="158" src="https://www.youtube.com/embed/3dofrKm_Usw" frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+
+                                <div id="videoDescription">
+                                    <a href="#">
+                                        <h2>Video 4</h2>
+                                    </a>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, praesentium.
+                                </div>
+                            </div>
                         </li>
 
                    </ul>
