@@ -7,20 +7,28 @@
 #videoList li{
     display: block;
 }
-.video{
+#videoList .video{
     height:100%;
     margin: auto;
+    overflow: auto;
+    padding: 0.5em 0em;
 }
 
-#videoFrame{
+#videoList .video .videoFrame{
     width: 30%;
     float: left;
 
 }
 
-#videoDescription{
+#videoList .video .videoFrame .frame{
+    height: 100%;
+}
+
+#videoList .video .videoDescription{
     width: 60%;
     height: 100%;
+    padding: 0em 0.5em; 
+    vertical-align: top;
     float: left;
     color: white;
     display: flex;
