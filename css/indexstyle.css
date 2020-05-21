@@ -1,4 +1,4 @@
-.logo{
+.logo {
     background: url('../img/fondo.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -6,22 +6,27 @@
     background-size: cover;
 }
 
-*{
-    margin:0px;
+* {
+    margin: 0px;
     padding: 0px;
-    font-family: 'calibri'; /*georgia, times, serif;*/
+    font-family: 'calibri';
+    /*georgia, times, serif;*/
     line-height: 1.6em;
     font-size: 1.2rem;
 }
 
+
 /* Navbar center image attributes */
-#menu #logoBar #logo{
+
+#menu #logoBar #logo {
     border: solid 0.7em rgb(0, 0, 0);
     border-radius: 10em;
     margin: 0;
 }
 
+
 /* Navbar attributes */
+
 #menu #logoBar {
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -30,53 +35,53 @@
     justify-content: center;
     /* overflow: auto; */
     vertical-align: top;
-    
-
 }
 
+
 /* Navbar unordered list attributes */
-#menu #logoBar ul{
+
+#menu #logoBar ul {
     background-color: rgb(0, 0, 0);
-    list-style:none;
+    list-style: none;
     display: block;
     margin: 0em;
     padding: 0em;
     height: 4em;
-    
 }
 
+
 /* Navbar image element list attributes*/
-#menu #logoBar #logo-li{
+
+#menu #logoBar #logo-li {
     display: inline;
     justify-content: center;
     vertical-align: middle;
     padding: 0em;
 }
 
+
 /* Navbar image element list anchors attributes */
-#menu #logoBar #logo-li a{
+
+#menu #logoBar #logo-li a {
     text-decoration: none;
-    padding=0;
-    margin=0;
+    padding: 0;
+    margin: 0;
 }
 
-
-#menu #logoBar #logo-li img{
+#menu #logoBar #logo-li img {
     display: inline-block;
     width: 5em;
     margin: 0em;
 }
 
-#menu #logoBar .item{
+#menu #logoBar .item {
     display: inline;
     justify-content: center;
     vertical-align: middle;
     padding: 0em;
-
 }
 
-
-#menu #logoBar .item a{
+#menu #logoBar .item a {
     background-color: rgb(0, 0, 0);
     color: dodgerblue;
     padding: 0.5em 0.8em;
@@ -85,39 +90,33 @@
     text-decoration: none;
     margin: 0em;
     font-weight: bold;
-    
 }
 
-#img-anchor{
+#img-anchor {
     padding: 0em;
     margin: 0em;
 }
 
 
-#menu #logoBar #logo-li a:hover img{
+#menu #logoBar #logo-li a:hover img {
     border: solid 0.7em white;
 }
-#menu #logoBar .item a:hover{
+
+#menu #logoBar .item a:hover {
     color: white;
-
 }
-
-
-
-
 
 
 .container {
     width: 50%;
- 
 }
 
-h1{
+h1 {
     line-height: 1.3em;
     font-size: 2rem;
 }
 
-p{
+p {
     margin-bottom: 1.6em;
 }
 
@@ -125,9 +124,8 @@ p{
     width = 100%;
 }
 
-
 .contenedor-columnas {
-    width: 100% ;
+    width: 100%;
     margin: auto;
     margin-bottom: 50px;
     background: url('../img/fondo.jpg') no-repeat center center fixed;
@@ -135,7 +133,6 @@ p{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 
 .contenedor-columnas h1,h2,h3,h4,h5{
@@ -155,7 +152,7 @@ p{
     box-shadow: 7px 13px 37px #000000;
 }
 
-.columna1 img{
+.columna1 img {
     width: 100%;
 }
 
@@ -171,7 +168,7 @@ p{
     color: white;
     box-shadow: 7px 13px 37px #000000;
 }
-    
+
 .columna3 {
     width: 20%;
     float: left;
@@ -184,6 +181,7 @@ p{
     color: white;
     box-shadow: 7px 13px 37px #000000;
 }
-.columna3 img{
+
+.columna3 img {
     width: 100%;
 }

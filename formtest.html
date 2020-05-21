@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,62 +9,64 @@
 
     <title>¿Quieres Unirte?</title>
 </head>
+
 <body>
     <header>
         <nav id="menu">
-            <div id = "logoBar" >
+            <div id="logoBar">
                 <ul>
                     <li class="item">
                         <a href="videos.html">Videos</a></li>
                     <li class="item">
                         <a href="robots.html">Robots</a></li>
                     <li id='logo-li'>
-                            <a href="index.html" id='img-anchor'>
-                                <img src="./img/mainLogo.png" alt="" id='logo'>
-                            </a>
+                        <a href="index.html" id='img-anchor'>
+                            <img src="./img/mainLogo.png" alt="" id='logo'>
+                        </a>
                     </li>
                     <li class="item"><a href="contactanos.html">Contáctanos</a></li>
                     <li class="item"><a href="formtest.html">¿Quieres Unirte?</a></li>
                 </ul>
             </div>
-        </nav>   
+        </nav>
     </header>
-   
+
     <!--Formulario para mandar curriculum-->
-    
+
     <form action="">
-    <section class="form-register">
-        
-        <h4>Envianos tu curriculum!</h4>
-        <input class="controls" type="text" name="Descripcion" id="Descripcion" placeholder="¿porque quieres formar parte del equipo?">
-        <input class="controls" type="text" name="Dondenosotros" id="Dondenosotros" placeholder="¿Donte te enteraste de nosotros?">
-        <p id="vinculo1">No gracias quisiera <a id="vinculo1" href="index.html">volver a inicio</a></p> 
-        <!--<input class="botons" type="file" value="Adjuntar">-->
-        
-        <!--modificacion de boton de adjuntar-->
-        <br>
-        <div id="adjuntbot">
-            <input id="file-input" type="file">
-            <label for="file-input">Adjuntar</label>
-        </div>
-        <br>
-        <span>
+        <section class="form-register">
+
+            <h4>Envianos tu curriculum!</h4>
+            <input class="controls" type="text" name="Descripcion" id="Descripcion" placeholder="¿porque quieres formar parte del equipo?">
+            <input class="controls" type="text" name="Dondenosotros" id="Dondenosotros" placeholder="¿Donte te enteraste de nosotros?">
+            <p id="vinculo1">No gracias quisiera <a id="vinculo1" href="index.html">volver a inicio</a></p>
+            <!--<input class="botons" type="file" value="Adjuntar">-->
+
+            <!--modificacion de boton de adjuntar-->
+            <br>
+            <div id="adjuntbot">
+                <input id="file-input" type="file">
+                <label for="file-input">Adjuntar</label>
+            </div>
+            <br>
+            <span>
             <strong id="descripcioncargado">Archivo cargado:</strong>
             <span id="file-name">Ninguno</span>
-        </span>
-        <script>
-            let inputFile=document.getElementById('file-input');
-            let fileNameField = document.getElementById('file-name');
-            inputFile.addEventListener('change', function(event){
-                let uploadedFileName = event.target.files[0].name;
-                fileNameField.textContent = uploadedFileName;
-            })
+            </span>
+            <script>
+                let inputFile = document.getElementById('file-input');
+                let fileNameField = document.getElementById('file-name');
+                inputFile.addEventListener('change', function(event) {
+                    let uploadedFileName = event.target.files[0].name;
+                    fileNameField.textContent = uploadedFileName;
+                })
             </script>
-        <input class="botons" type="submit" value="Enviar">
+            <input class="botons" type="submit" value="Enviar">
     </form>
-    
+
     <!--Fin del formulario-->
 
     </section>
 </body>
+
 </html>

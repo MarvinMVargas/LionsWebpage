@@ -1,36 +1,36 @@
-#videoList a{
-    color: rgb(218,218,0);
+#videoList a {
+    color: rgb(218, 218, 0);
     font-family: sans-serif;
     text-decoration: none;
-
 }
-#videoList li{
+
+#videoList li {
     display: block;
 }
-#videoList .video{
-    height:100%;
+
+#videoList .video {
+    height: 100%;
     margin: auto;
     overflow: auto;
     padding: 0.5em 0em;
 }
 
-#videoList .video .videoFrame{
+#videoList .video .videoFrame {
     width: 30%;
     float: left;
-
 }
 
-#videoList .video .videoFrame .frame{
+#videoList .video .videoFrame .frame {
     height: 100%;
     width: 100%;
 }
 
-#videoList .video .videoDescription{
+#videoList .video .videoDescription {
     width: 60%;
     height: 100%;
-    padding: 0em 0.5em; 
+    padding: 0em 0.1em;
     vertical-align: top;
-    float: left;
+    float: right;
     color: white;
     display: flex;
     flex-flow: column;
