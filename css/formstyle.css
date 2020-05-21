@@ -26,7 +26,15 @@ body {
 }
 .form-register h4 {
     font-size: 22px;
-    margin-bottom: 20px;
+}
+
+.form-register p{
+    font-size: 0.8em;
+}
+
+.form-register #error{
+    color: red;
+    font-weight: bold;
 }
 .controls {
     width: 100%;
@@ -37,12 +45,13 @@ body {
     border: 1px solid #1f53c5;
     font-family: 'calibri';
     font-size: 18px;
+    color: white;
 }
 .form-register a:hover {
     color: white;
     text-decoration: underline;
 }
-.form-register .botons {
+.form-register .button {
     width: 100%;
     background: yellow; 
     border: none;
@@ -52,7 +61,7 @@ body {
     margin: 16px 0;
     font-size: 20px;
 }
-.form-register .botons:hover {
+.form-register .button:hover {
     background-color: rgb(0, 255, 170)
 }
 

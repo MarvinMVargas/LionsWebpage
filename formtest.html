@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/formstyle.css">
     <link rel="stylesheet" href="./css/indexstyle.css">
-
     <title>¿Quieres Unirte?</title>
 </head>
 
@@ -32,17 +31,15 @@
     </header>
 
     <!--Formulario para mandar curriculum-->
-
-    <form action="">
         <section class="form-register">
 
-            <h4>Envianos tu curriculum!</h4>
-            <input class="controls" type="text" name="Descripcion" id="Descripcion" placeholder="¿porque quieres formar parte del equipo?">
-            <input class="controls" type="text" name="Dondenosotros" id="Dondenosotros" placeholder="¿Donte te enteraste de nosotros?">
-            <p id="vinculo1">No gracias quisiera <a id="vinculo1" href="index.html">volver a inicio</a></p>
-            <!--<input class="botons" type="file" value="Adjuntar">-->
 
-            <!--modificacion de boton de adjuntar-->
+            <h4>Envianos tu curriculum!</h4>
+            <p id = "invitationText">Te invitamos a ser parte de Lions R.C. </p>
+            <p id="error"></p>
+            <input class="controls" type="text" name="firstName" id="firstName" placeholder="First Name">
+            <input class="controls" type="text" name="lastName" id="lastName" placeholder="Last Name">
+            <input class="controls" type="text" name="email" id="email" placeholder="Email">
             <br>
             <div id="adjuntbot">
                 <input id="file-input" type="file">
@@ -53,20 +50,13 @@
             <strong id="descripcioncargado">Archivo cargado:</strong>
             <span id="file-name">Ninguno</span>
             </span>
-            <script>
-                let inputFile = document.getElementById('file-input');
-                let fileNameField = document.getElementById('file-name');
-                inputFile.addEventListener('change', function(event) {
-                    let uploadedFileName = event.target.files[0].name;
-                    fileNameField.textContent = uploadedFileName;
-                })
-            </script>
-            <input class="botons" type="submit" value="Enviar">
-    </form>
+            <button class="button" id='submit'>Enviar</button>
 
+    
     <!--Fin del formulario-->
 
     </section>
+    <script src = "./js/form.js"></script>
 </body>
 
 </html>
