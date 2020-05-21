@@ -6,6 +6,7 @@
 
 #videoList li {
     display: block;
+    height: auto;
 }
 
 #videoList .video {
@@ -13,6 +14,8 @@
     margin: auto;
     overflow: auto;
     padding: 0.5em 0em;
+    display: flex;
+    flex-flow: row;
 }
 
 #videoList .video .videoFrame {
@@ -20,7 +23,7 @@
     float: left;
 }
 
-#videoList .video .videoFrame .frame {
+#videoList .video .videoFrame iframe {
     height: 100%;
     width: 100%;
 }
@@ -28,9 +31,9 @@
 #videoList .video .videoDescription {
     width: 50%;
     height: 100%;
-    padding: 0em 0.1em;
+    padding: 0em 0.8em;
     vertical-align: top;
-    float: right;
+    float: left;
     color: white;
     display: flex;
     flex-flow: column;
