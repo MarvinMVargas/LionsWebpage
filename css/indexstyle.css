@@ -93,22 +93,6 @@
     margin: 0em;
 }
 
-#menu #logoBar .item ul{
-    display: none;
-    position: absolute; 
-    background-color: #000000;
-}
-
-#menu #logoBar .item .dropdown{
-    vertical-align: top;
-    display: flex;
-    flex-flow: column;
-    
-}
-
-#menu #logoBar .item .drop{
-    display:block
-}
 
 #menu #logoBar #logo-li a:hover img{
     border: solid 0.7em white;
@@ -118,10 +102,6 @@
 
 }
 
-#menu #logoBar .item:hover ul{
-    display: block;
-
-}
 
 
 
@@ -141,18 +121,6 @@ p{
     margin-bottom: 1.6em;
 }
 
-
-/* .main{
-    padding-top: 10rem;
-    background-color: dodgerblue;
-
-} */
-
-.footer {
-    padding: 4rem 0;
-    text-align: center;
-}
-
 .main{
     width = 100%;
 }
@@ -169,6 +137,11 @@ p{
     background-size: cover;
 
 }
+
+.contenedor-columnas h1,h2,h3,h4,h5{
+    color: rgb(218,218,0);
+}
+
 .columna1 {
     width: 20%;
     float: left;
@@ -181,6 +154,7 @@ p{
     color: white;
     box-shadow: 7px 13px 37px #000000;
 }
+
 .columna1 img{
     width: 100%;
 }
