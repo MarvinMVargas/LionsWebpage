@@ -5,7 +5,9 @@
 }
 
 body {
-    background-image: url('fondo.jpg');
+    background-color:#142850;
+    /*background-image: url('fondo.jpg');*/
+
 }
 
 
@@ -90,11 +92,11 @@ input#file-input+label:hover {
 #file-name {
     font-size: 18px;
 }
-
+/*
 body {
     background: url('../img/fondo.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;/*
 }
