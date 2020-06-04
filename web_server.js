@@ -1,15 +1,13 @@
-var http = require('http');
-var fs = require('fs');
-var url = require('url');
-var express = require('express');
-var path = require('path');
+let fs = require('fs');
+let express = require('express');
+let path = require('path');
+let sql = require('mssql');
 
-var app = express();
+let app = express();
 app.use(express.static("public"));
 app.set('views', path.join(__dirname, 'public'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
-
 
 var router = express.Router();
 
@@ -17,35 +15,49 @@ app.get("/",function(req,ans){
     ans.render("index.html");
 });
 
-app.get("/videos",function(req,ans){
+app.get("/videos.html",function(req,ans){
     ans.render("videos.html");
 });
 
-app.get("/robots",function(req,ans){
+app.get("/robots.html",function(req,ans){
     ans.render("robots.html");
 });
 
-app.get("/contactanos",function(req,ans){
+app.get("/contactanos.html",function(req,ans){
     ans.render("contactanos.html");
 });
 
-app.get("/join",function(req,ans){
+app.get("/formtest.html",function(req,ans){
+    // config for your database
+    let config = {
+        user: 'sa',
+        password: 'lions1234',
+        server: 'localhosst', 
+        database: 'lions' 
+    };
+
+    sql.connect(config, function (err) {
+    
+        if (err) console.log(err);
+        // create Request object
+        var request = new sql.Request();
+        request.query('select * from email', function (err, recordset) {
+            
+            if (err) console.log(err)
+
+            // send records as a response
+            console.log(recordset);
+            
+        });
+    });
+
     ans.render("formtest.html");
+});
+
+app.use("/data",function(req,ans){
+    ans.send(req);
 });
 
 app.listen(8880);
 
 module.exports = router;
-// http.createServer(function (req, res) {
-//     var path = url.parse(req.url,true);
-//     var filePath = '.' + path.pathname;
-//     fs.readFile(filePath, function(err, data) {
-//         if(err){
-//             res.writeHead(404, {'Content-Type': 'text/html'});
-//             return res.end("404 Not Found");
-//         }
-//         res.writeHead(200, {'Content-Type': 'text/html'});
-//         res.write(data);
-//         return res.end();
-//     });
-//   }).listen(8880);

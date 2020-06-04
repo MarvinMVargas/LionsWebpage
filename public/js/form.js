@@ -14,10 +14,10 @@ function exec(){
                         "lastName": undefined ,
                         "email":undefined};
 
-    const candidates = [];
-
+    
+    let candidates = [];
     emailField.addEventListener('keypress',function(event){
-        var k = event ? event.which : window.event.keyCode;
+        let k = event ? event.which : window.event.keyCode;
         if (k == 32) return false;})
 
     inputFile.addEventListener('change', function(event) {
@@ -25,13 +25,13 @@ function exec(){
         fileNameField.textContent = uploadedFileName;
     })
 
-
     btt.addEventListener('click', function(e){
+        console.log('clic');
         let usedEmail = false;
         let emptyFields = false;
         let emptyFile = false;
         emailField.value = emailField.value.replace(' ','');
-
+        
         if(firstNameField.value == "" || lastNameField.value == "" || emailField.value == ""){
             emptyFields = true;
         }
@@ -59,7 +59,8 @@ function exec(){
             firstNameField.value = "";
             lastNameField.value = "";
             emailField.value = "";
-            window.location.href = '../index.html';
+            //window.location.href = '../index.html';
+            window.location.href = '../data/fname=' + newCandidate.firstName + '&lname=' + newCandidate.lastName + '&email=' + newCandidate.email;
         }
         else if(usedEmail){
             error.textContent = "Ese email ya esta en uso, por favor use otro.";
