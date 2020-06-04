@@ -1,0 +1,26 @@
+{
+  "name": "LionsWebpage",
+  "version": "1.0.0",
+  "description": "Lions R.C. webpage source code. Project for Graphical Interfaces class.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarvinMVargas/LionsWebpage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarvinMVargas/LionsWebpage/issues"
+  },
+  "homepage": "https://github.com/MarvinMVargas/LionsWebpage#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "mssql": "^6.2.0"
+  }
+}
