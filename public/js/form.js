@@ -16,6 +16,7 @@ function exec(){
 
     
     let candidates = [];
+
     emailField.addEventListener('keypress',function(event){
         let k = event ? event.which : window.event.keyCode;
         if (k == 32) return false;})
@@ -54,13 +55,13 @@ function exec(){
             newCandidate.email = emailField.value;
             candidates.push(newCandidate);
 
-            console.log(`New candidate: ${newCandidate.firstName} ${newCandidate.lastName} Email: ${newCandidate.email}`);
+            // console.log('../data?fname=' + newCandidate.firstName + '&lname=' + newCandidate.lastName + '&email=' + newCandidate.email);
+            // console.log(`New candidate: ${newCandidate.firstName} ${newCandidate.lastName} Email: ${newCandidate.email}`);
             alert(`Thanks for registering ${newCandidate.firstName} ${newCandidate.lastName}! We´ll contact you by email! `);
             firstNameField.value = "";
             lastNameField.value = "";
             emailField.value = "";
-            //window.location.href = '../index.html';
-            window.location.href = '../data/fname=' + newCandidate.firstName + '&lname=' + newCandidate.lastName + '&email=' + newCandidate.email;
+            window.location.href = './data?fname=' + newCandidate.firstName + '&lname=' + newCandidate.lastName + '&email=' + newCandidate.email;
         }
         else if(usedEmail){
             error.textContent = "Ese email ya esta en uso, por favor use otro.";
