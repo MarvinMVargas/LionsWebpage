@@ -5,16 +5,19 @@
 
 }
 body {
-    background: url('../img/fondo.jpg') no-repeat center center fixed;
+   
+    /*background: url('../img/fondo.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
+    background-color: #142850;  /*COLOR DE FONDO PAGINA WEB*/
+
 }
 /* padding modifica los margenes internos de lo escrito en el cuadro*/
 .form-register {
     width: 400px;
-    background-color: dodgerblue;
+    background-color: #27496d; /*COLOR CUADRO CONTACTANOS*/
     padding: 30px;
     margin: auto;
     margin-top: 150px;
@@ -53,11 +56,11 @@ body {
 }
 .form-register .button {
     width: 100%;
-    background: yellow; 
+    background: #00909e; /*COLOR FONDO DE BOTONES*/
     border: none;
     padding: 12px;
     border-radius: 4px;
-    color: black;
+    color: black; /*COLOR LETRAS DE ENVIAR*/
     margin: 16px 0;
     font-size: 20px;
 }
@@ -71,7 +74,7 @@ input#file-input{
 
 input#file-input + label{
     width: 100%;
-    background: yellow; 
+    background: #00909e;  /*COLOR FONDO BOTON ADJUNTAR*/
     border: none;
     padding: 12px;
     border-radius: 4px;
