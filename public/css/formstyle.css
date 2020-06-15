@@ -17,8 +17,9 @@ body {
 
 /* padding modifica los margenes internos de lo escrito en el cuadro*/
 
+
 .form-register {
-    width: 400px;
+    width: 40vw;
     background-color: #27496d;
     /*COLOR CUADRO CONTACTANOS*/
     padding: 30px;
@@ -38,7 +39,7 @@ body {
     font-size: 0.8em;
 }
 
-.form-register #error {
+#error {
     color: red;
     font-weight: bold;
 }
@@ -59,6 +60,7 @@ body {
     color: white;
     text-decoration: underline;
 }
+
 
 .form-register .button {
     width: 100%;

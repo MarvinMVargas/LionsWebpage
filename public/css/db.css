@@ -1,0 +1,27 @@
+.dbSection{
+    width: 90vw;
+    background-color: #27496d;
+    /*COLOR CUADRO CONTACTANOS*/
+    padding: 30px;
+    margin: 5vh 5vw 5vh 5vw;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000000;
+    justify-content: center;
+}
+
+.dbSection th{
+    padding:0.3rem 0.5rem ;
+    border: white 1px solid;
+}
+
+.dbSection .header{
+    color: #27496d;
+    font-weight: bold;
+}
+
+.dbSection .data{
+    color: white;
+    font-weight: normal;
+}
